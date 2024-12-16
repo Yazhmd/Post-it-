@@ -88,6 +88,51 @@ body {
     top: 150px; /* Adjust based on elf image design */
     left: 165px;
 }
+/* Position the lights at the bottom of the navbar */
+/* Christmas lights container */
+.christmas-lights {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Space between bulbs */
+    padding: 10px;
+    flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
+}
+
+/* Default bulb size */
+.christmas-lights .bulb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: flicker 1s infinite;
+}
+
+/* Different colors for bulbs */
+.christmas-lights .bulb:nth-child(2) {
+    background-color: green;
+    animation-delay: 0.2s;
+}
+.christmas-lights .bulb:nth-child(3) {
+    background-color: yellow;
+    animation-delay: 0.4s;
+}
+.christmas-lights .bulb:nth-child(4) {
+    background-color: blue;
+    animation-delay: 0.6s;
+}
+.christmas-lights .bulb:nth-child(5) {
+    background-color: orange;
+    animation-delay: 0.8s;
+}
+
+/* Flickering effect */
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
 
 
 .dark-bg {
