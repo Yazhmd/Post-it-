@@ -1,6 +1,9 @@
 # Post It
 
+
+
 ![Post It landing page](documentation/final_views/)
+
 
 ## Introduction
 
@@ -702,6 +705,3 @@ The following sites complemented my learning for this project alongside the [Cod
 
 ## Acknowledgements
 
-- We would all like to thank our learning facilitator Amy Richardson, SME Mark Briscoe, and Coding Coach John Reardon for the continued aid and support throughout this project.
-- A shout out to the rest 2024 Lancs Bootcamp cohort who have served to be a source of inspiration and help throughout our time on this course. To have been able to work through this bootcamp with them has been an absolute pleasure.
-- Heath would like to thank his amazing partner Jolene who is the inspiration for all that he does, and his little doggy Spencer who reminds him that life is not all about being stuck at a keyboard.
