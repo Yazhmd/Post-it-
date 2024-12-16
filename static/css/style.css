@@ -50,22 +50,24 @@ body {
     font-weight: bold; 
 }
 /* Face (Elf) Container */
+/* Face (Elf) Container */
 .face-container {
-    position: absolute; /* Allows the elf to move freely within the footer-container */
-    top: 610px; /* Move the elf upwards relative to the footer-container */
-    left: 50%;
-    transform: translateX(-50%); /* Center the elf horizontally */
-    z-index: 2; /* Ensure it appears above the footer */
-    width: 300px; /* Adjust as needed for the image size */
+    position: fixed; /* Fixed position to lock it to the viewport */
+    bottom: 28px; /* Adjust to place the elf above the footer */
+    left: 50%; /* Center horizontally on the page */
+    transform: translateX(-50%); /* Center alignment fix */
+    z-index: 10; /* Ensure it stays on top of other content */
+    width: 300px; /* Adjust width as needed */
     height: auto;
 }
 
 /* Elf Image */
 .face-image {
-    width: 100%; /* Make the image responsive */
-    height: auto;
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
     display: block;
 }
+
 /* Eyes */
 .eye {
     position: absolute;
@@ -73,20 +75,20 @@ body {
     height: 10px;
     background-color: black;
     border-radius: 50%;
-    z-index: 1; /* Place behind the face image */
+    z-index: 1;
     transition: transform 0.1s ease-out;
 }
 
-/* Left Eye Position */
+/* Left Eye */
 .left-eye {
-    top: 150px; /* Adjust based on elf image design */
+    bottom: 137px;
     left: 120px;
 }
 
-/* Right Eye Position */
+/* Right Eye */
 .right-eye {
-    top: 150px; /* Adjust based on elf image design */
-    left: 165px;
+    bottom: 137px;
+    left: 167px;
 }
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
@@ -471,4 +473,10 @@ footer{
 .btn-close-msg,
 .alert-dismissible {
     color: #c0c0c0;
+}
+/* Media Query for Tablet Screens */
+@media screen and (max-width: 768px) {
+    .face-container {
+        display: none; /* Hide the elf container on tablet screens and smaller */
+    }
 }
