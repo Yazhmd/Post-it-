@@ -93,8 +93,7 @@ body {
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
 .christmas-lights {
-    position: fixed;
-    top: 50px; /* Fixed to the bottom of the viewport */
+   
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     display: flex;
@@ -104,6 +103,19 @@ body {
     flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
     z-index: 10; /* Ensure it's above other content */
 }
+
+.christmas-lights-top{
+    position: fixed;
+    top: 50px; 
+}
+
+.christmas-lights-bottom{
+    display: none;
+    position: fixed;
+    bottom: 52px; /* Fixed to the bottom of the viewport */
+}
+
+
 
 /* Default bulb size */
 .christmas-lights .bulb {
@@ -475,8 +487,12 @@ footer{
     color: #c0c0c0;
 }
 /* Media Query for Tablet Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .face-container {
+        
         display: none; /* Hide the elf container on tablet screens and smaller */
+    }
+    .christmas-lights-bottom{
+        display: flex;
     }
 }
