@@ -1,0 +1,145 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="masthead-text">
+            <!-- Post title goes in these h1 tags -->
+            <h1 class="post-title">{{ post.title }}</h1>
+            <!-- Post author goes before the | the post's created date goes after -->
+            <p class="post-subtitle">Come join us on {{ post.event_start }}</p>
+        </div>
+        <div class="d-none d-md-block masthead-image">
+            {% if "placeholder" in post.featured_image.url %}
+                <a href="{% url 'post_detail' post.slug %}"><img loading="lazy" class="card-img-top" 
+                    src="{% static 'images/default.webp' %}" alt="placeholder image"> </a>
+            {% else %}
+                <a href="{% url 'post_detail' post.slug %}"><img loading="lazy" class="card-img-top" 
+                    src=" {{ post.featured_image.url }}" alt="{{ post.title }}"> </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container content-section">
+    <div class="row">
+        <!-- Blog Text -->
+        <div class="col-md-12">
+            <div>
+                <div class="card-body article-colour card-text">
+                   
+                        {{ post.article | safe }}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="masthead-text">
+        <p class="post-subtitle">This event will end {{ post.event_end }}</p>
+    </div>
+    <!-- Displaying Comments -->
+    <div class="container content-section comment-colour">
+        <!-- Comments Section on the Left -->
+        <div class="col-md-8">
+            <br>
+            <h3>Comments ({{ comment_count }}):</h3>
+            <div>
+                <!-- Loop through comments -->
+                {% for comment in comments %}
+                    {% if comment.approved or  comment.author == user %}
+                        <div class="p-3 mb-3 border rounded comment">
+                            <p class="fw-bold"> 
+                                <span class="fw-normal">
+                                    {{ comment.created_on }}
+                                </span>
+                                {{ comment.author }} wrote:
+                               
+                            </p>
+                            <div id="comment{{ comment.id }}">
+                                {{ comment.body | linebreaks }}
+                            </div>
+
+                        
+                        {%if comment.author == user%} 
+                            {%if not comment.approved %} 
+                                <p class="approval">
+                                    This comment is awaiting approval
+                                </p>
+                            {% endif %}
+                            <div>
+                                <button class="btn btn-sm btn-danger btn-comment-delete" data-comment-id="{{ comment.id }}">Delete</button>
+                                <button class="btn btn-sm btn-secondary btn-comment-edit" data-comment-id="{{ comment.id }}">Edit</button>
+                            </div>
+                        
+                        {% endif %}
+                            
+                    </div>
+                    {% endif %}
+                {% empty %}
+                    <p>No comments yet. Be the first to comment!</p>
+                {% endfor %} 
+            </div>   
+        </div>
+                {% if user.is_authenticated %}
+                    <button value="Add Comment" onclick="openAddComment()">Add Comment</button>
+                {% else %}
+                    <a href="{% url 'account_login' %}"> <button value="Add Comment" onclick="openAddComment()">Log In to leave a comment.</button></a> 
+                {% endif %}
+            </div>
+        </div>
+
+        
+        <div>
+            <div class="card sticky-top">
+                <div id="addComment" class="wizardComment">
+                    {% if user.is_authenticated %}
+                        <h3>Leave a Comment</h3> <a onclick="closeAddComment()" class="closeButton">X</a>
+                        <p>Posting as: {{ user.username }}</p>
+                        <form id="commentForm" method="post">
+                            {{ comment_form | crispy }}
+                            {% csrf_token %}
+                            <button type="submit" id="submitButton" class="btn btn-primary submitButton">Submit</button>
+                        </form>
+                        
+                    {% else %}
+                        <p>Please <a href="{% url 'account_login' %}">log in</a> to leave a comment.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1"
+  aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content delete-modal">
+      <div class="modal-header">
+        <h5 class="modal-title"
+          id="deleteModalLabel">Delete comment?</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete your comment?
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <a id="deleteConfirm" href="#" class="btn
+        btn-delete-conf">Delete</a>
+        <button type="button" class="btn btn-secondary btn-close-conf"
+          data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/comments.js' %}"></script>
+{% endblock %}
