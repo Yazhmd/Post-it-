@@ -10,7 +10,7 @@ from .forms import CommentForm
 
 def GetComments(request):
     post_list = Post.objects.filter(status=1)
-    return post_list.all().order_by('-created_on')
+    return post_list.all().order_by('-event_start')
 
 
 def PostList(request):
