@@ -91,11 +91,16 @@ body {
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
 .christmas-lights {
+    position: fixed;
+    top: 50px; /* Fixed to the bottom of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the lights horizontally */
     gap: 8px; /* Space between bulbs */
     padding: 10px;
     flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
+    z-index: 10; /* Ensure it's above other content */
 }
 
 /* Default bulb size */
