@@ -24,3 +24,51 @@ document.addEventListener('mousemove', (event) => {
         eye.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const lightsContainer = document.querySelector('.christmas-lights');
+    const colors = ['red', 'green', 'yellow', 'blue', 'orange']; // Array of colors
+    
+    // Function to determine the number of bulbs based on screen size
+    function getBulbCount() {
+        const screenWidth = window.innerWidth;
+        
+        if (screenWidth >= 1024) {
+            return 48;  // Desktop: 27 bulbs
+        } else if (screenWidth >= 768) {
+            return 35;  // Tablet: 18 bulbs
+        } else {
+            return 19;  // Mobile: 12 bulbs
+        }
+    }
+
+    // Function to update the bulbs
+    function updateBulbs() {
+        // Get the appropriate number of bulbs based on the screen width
+        const bulbCount = getBulbCount();
+        
+        // Clear any existing bulbs in the container
+        lightsContainer.innerHTML = '';
+
+        // Add the bulbs dynamically based on the screen size
+        for (let i = 0; i < bulbCount; i++) {
+            const bulb = document.createElement('div');
+            bulb.classList.add('bulb');
+            
+            // Assign a color from the array, cycling through the colors
+            const color = colors[i % colors.length]; // Cycle through colors
+            bulb.style.backgroundColor = color;
+
+            // Assign a unique animation delay for flickering effect
+            bulb.style.animationDelay = `${(i * 0.2) % 1}s`; // Delay ranges from 0s to 0.8s
+
+            lightsContainer.appendChild(bulb);
+        }
+    }
+
+    // Initialize the bulbs
+    updateBulbs();
+
+    // Update bulbs when the window is resized
+    window.addEventListener('resize', updateBulbs);
+});
