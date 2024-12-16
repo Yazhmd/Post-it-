@@ -51,7 +51,7 @@ body {
 }
 /* Face (Elf) Container */
 .face-container {
-    position: fixed; /* Allows the elf to move freely within the footer-container */
+    position: absolute; /* Allows the elf to move freely within the footer-container */
     top: 610px; /* Move the elf upwards relative to the footer-container */
     left: 50%;
     transform: translateX(-50%); /* Center the elf horizontally */
