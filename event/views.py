@@ -7,17 +7,10 @@ from .forms import CommentForm
 
 # Create your views here.
 
-
-def GetComments(request):
-    post_list = Post.objects.filter(status=1)
-    return post_list.all().order_by('-created_on')
-
-
-def PostList(request):
-
-    return render(request, 'event/index.html', {
-        'post_list': GetComments(request),
-    })
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1)
+    template_name = "event/index.html"
+    paginate_by = 3
 
 
 def post_detail(request, slug):
