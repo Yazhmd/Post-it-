@@ -18,5 +18,9 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
+    path('bio/', include("bio.urls"), name="bio-urls"),
+    path('summernote/', include('django_summernote.urls')),
+    path('', include('event.urls'), name='event-urls'),
 ]
