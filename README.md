@@ -70,7 +70,7 @@ Post It is accessible via all browsers with full responsiveness on different scr
 
 ### Colour Scheme
 
-We aimed for a colour scheme that ????
+The idea of the website is to have events posted on a post it note on a corkboard. The colour scheme reflected the traditional colours of a Post It note.
 
 ![screenshot of colour scheme](documentation/final_views/)  
 
@@ -92,7 +92,7 @@ The project goal was to build a simple website showcasing upcoming community eve
 
 ## Agile Methodologies - Project Management
 
- Post It is our third project following Agile planning methods. We used our [Github Projects Board](link_to_project_board) to plan and document all of our work.
+ Post It is our third project following Agile planning methods. We used our [Github Projects Board](https://github.com/users/Yazhmd/projects/4) to plan and document all of our work.
 
 ### MoSCoW Prioritization
 
@@ -105,7 +105,7 @@ We chose to follow the MoSCoW Prioritization method for Post It, identifying and
 
 ## User Stories
 
-User stories and features recorded and managed on [GitHub Projects](link_to_project_board)
+User stories and features recorded and managed on [GitHub Projects](https://github.com/users/Yazhmd/projects/4)
 
 ### Visitor User Stories
 
@@ -114,7 +114,7 @@ User stories and features recorded and managed on [GitHub Projects](link_to_proj
 
 ## Scope Plane
 
-As this would be a dual learning/building project using technologies that were still relatively new to us, such as Django, SQL, Bootstrap and Cloudinary, we were cautious to maintain consistent control over the scope of the project and not let the idea grow too big. We needed to lockdown project features down early early so as not to lose track of the MVP. Following Agile Planning Methodologies, we added User Stories as issues on the [GitHub Projects](link_to_projects_board) to keep the flow of the project in check.
+As this would be a dual learning/building project using technologies that were still relatively new to us, such as Django, SQL, Bootstrap and Cloudinary, we were cautious to maintain consistent control over the scope of the project and not let the idea grow too big. We needed to lockdown project features down early early so as not to lose track of the MVP. Following Agile Planning Methodologies, we added User Stories as issues on the [GitHub Projects](https://github.com/users/Yazhmd/projects/4) to keep the flow of the project in check.
 
 Essential features of my project were:
 - An accessible website that fulfils user needs
@@ -132,7 +132,7 @@ From initial concept through to finished product we opted to use standard naviga
 
 ### Wireframes
 
-The wireframes for Post It were made using ???????. We were sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for Paginated Posts, and Individual Post pages as all login and registration forms would be created by Allauth.
+The wireframes for Post It were made using Figma. We were sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for Paginated Posts, and Individual Post pages as all login and registration forms would be created by Allauth.
 
 **Mobile and Desktop views for:**
  
@@ -314,7 +314,7 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 - Python
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
 - [Gitpod](https://www.gitpod.io) as an online, cloud-based IDE for development.
-- ???????? for design planning and wireframes.
+- [Figma](https://www.figma.com/) for design planning and wireframes.
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the Post It application.
