@@ -4,6 +4,7 @@ from .models import Bio
 
 # Create your views here.
 
+
 class BioList(generic.ListView):
     queryset = Bio.objects.all()
     template = "bio/bio.html"
