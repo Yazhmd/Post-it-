@@ -7,17 +7,10 @@ from .forms import CommentForm
 
 # Create your views here.
 
-
-def GetComments(request):
-    post_list = Post.objects.filter(status=1)
-    return post_list.all().order_by('-created_on')
-
-
-def PostList(request):
-
-    return render(request, 'event/index.html', {
-        'post_list': GetComments(request),
-    })
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1)
+    template_name = "event/index.html"
+    paginate_by = 6
 
 
 def post_detail(request, slug):
@@ -83,7 +76,7 @@ def comment_edit(request, slug, comment_id):
         if comment_form.is_valid() and comment.author == request.user:
             comment = comment_form.save(commit=False)
             comment.post = post
-            comment.approved = False
+            comment.approved = True
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:

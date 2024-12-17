@@ -27,9 +27,9 @@
    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
    <!-- Add Favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/' %}" >
-   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/' %}">
-   <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon/' %}">
+   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/favicon-180x180.png' %}" >
+   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+   <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon/favicon-16x16.png' %}">
 
    <!-- Google Fonts -->
    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
     <nav class="navbar navbar-expand-lg navbar-light nav-bg">
         <div class="container-fluid">
             <div class="navbar-brand">
-               <!-- <img loading="lazy" src="{% static 'images/' %}" width="30" height="30"
-            alt="Capital B on a metel button. Used as the Bloggel Logo."> -->
+               <img loading="lazy" src="{% static 'images/logo.webp' %}" width="30" height="30"
+            alt="PostIt written on a yellow postit note. Used as the PostIt Logo.">
             <span class="brand-text">Post It</span>
             </div>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -81,7 +81,8 @@
         </div >
     </nav>
      <!-- Add the Christmas Lights div at the bottom of the navbar -->
-     <div class="christmas-lights"></div>
+     <div class="christmas-lights christmas-lights-top"></div>
+ 
 
 
      <!-- displaying Django messages -->
@@ -106,13 +107,16 @@
     </main>
 
 
-   
+    <div class="christmas-lights christmas-lights-bottom"></div>
+
+    
+
        <!-- Footer -->
-
-
        <footer class="footer mt-auto py-3 dark-bg">
     
-       
+           
+
+
         <!-- Social -->
         <p class="d-flex justify-content-around foot-text align-items-center">
             <!-- GitHub -->
@@ -128,10 +132,11 @@
             <a class="foot-links" href="https://www.twitter.com" target="_blank" rel="noopener"
             aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
+        
     </footer>
 
     <!-- Scripts -->
-   
+   <script src="{% static 'js/christmas.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
