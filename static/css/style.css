@@ -7,11 +7,16 @@ body {
     font-family: 'Source Sans 3';
     font-weight: 400;
     width: 100%;
-    background-image: url('../images/bg.webp'); /* Replace with your image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-image: url('../images/bg.webp');
+    /* Replace with your image */
+    background-size: cover;
+    /* Ensures the image covers the entire screen */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-attachment: fixed;
+    /* Keeps the image fixed while scrolling */
 }
 
 .brand {
@@ -22,49 +27,58 @@ body {
 
 .nav-bg {
     position: fixed;
-    top:0px;
+    top: 0px;
     z-index: 20;
     width: 100%;
     background-color: #a36846;
 }
 
-.brand-text{
+.brand-text {
     color: #c0c0c0;
     font-size: 20px;
 }
 
 .link,
-.nav-link{
-    color: white !important; 
+.nav-link {
+    color: white !important;
     transition: color 0.3s ease;
     font-size: 20px;
 }
 
 .nav-link:hover {
-    color: #3DA6FF !important; 
+    color: #3DA6FF !important;
 }
 
 .active {
-    color: #3DA6FF !important; 
-    text-decoration: underline; 
-    font-weight: bold; 
+    color: #3DA6FF !important;
+    text-decoration: underline;
+    font-weight: bold;
 }
+
 /* Face (Elf) Container */
 /* Face (Elf) Container */
 .face-container {
-    position: fixed; /* Fixed position to lock it to the viewport */
-    bottom: 28px; /* Adjust to place the elf above the footer */
-    left: 50%; /* Center horizontally on the page */
-    transform: translateX(-50%); /* Center alignment fix */
-    z-index: 10; /* Ensure it stays on top of other content */
-    width: 300px; /* Adjust width as needed */
+    position: fixed;
+    /* Fixed position to lock it to the viewport */
+    bottom: 28px;
+    /* Adjust to place the elf above the footer */
+    left: 50%;
+    /* Center horizontally on the page */
+    transform: translateX(-50%);
+    /* Center alignment fix */
+    z-index: 10;
+    /* Ensure it stays on top of other content */
+    width: 300px;
+    /* Adjust width as needed */
     height: auto;
 }
 
 /* Elf Image */
 .face-image {
-    width: 100%; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Responsive width */
+    height: auto;
+    /* Maintain aspect ratio */
     display: block;
 }
 
@@ -90,29 +104,37 @@ body {
     bottom: 137px;
     left: 167px;
 }
+
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
 .christmas-lights {
-   
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
+
+    left: 0;
+    /* Align to the left */
+    right: 0;
+    /* Align to the right */
     display: flex;
-    justify-content: center; /* Center the lights horizontally */
-    gap: 8px; /* Space between bulbs */
+    justify-content: center;
+    /* Center the lights horizontally */
+    gap: 8px;
+    /* Space between bulbs */
     padding: 10px;
-    flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
-    z-index: 10; /* Ensure it's above other content */
+    flex-wrap: wrap;
+    /* Wrap bulbs to fit smaller screens */
+    z-index: 10;
+    /* Ensure it's above other content */
 }
 
-.christmas-lights-top{
+.christmas-lights-top {
     position: fixed;
-    top: 50px; 
+    top: 50px;
 }
 
-.christmas-lights-bottom{
+.christmas-lights-bottom {
     display: none;
     position: fixed;
-    bottom: 52px; /* Fixed to the bottom of the viewport */
+    bottom: 52px;
+    /* Fixed to the bottom of the viewport */
 }
 
 
@@ -130,14 +152,17 @@ body {
     background-color: green;
     animation-delay: 0.2s;
 }
+
 .christmas-lights .bulb:nth-child(3) {
     background-color: yellow;
     animation-delay: 0.4s;
 }
+
 .christmas-lights .bulb:nth-child(4) {
     background-color: blue;
     animation-delay: 0.6s;
 }
+
 .christmas-lights .bulb:nth-child(5) {
     background-color: orange;
     animation-delay: 0.8s;
@@ -145,9 +170,12 @@ body {
 
 /* Flickering effect */
 @keyframes flicker {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.3;
     }
@@ -158,18 +186,18 @@ body {
     background-color: #a36846;
 }
 
-.foot-text{
+.foot-text {
     color: #c0c0c0;
     font-size: 25px;
 }
 
-.foot-links{
+.foot-links {
     color: white !important;
     font-size: 30px;
     margin-bottom: 6px;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: -30px;
     width: 100%;
@@ -179,16 +207,16 @@ footer{
     top: 10%;
 }
 
-.logout{
+.logout {
     padding-top: 20px;
     padding-bottom: 70px;
 }
 
 .login {
-    padding-bottom: 70px;   
+    padding-bottom: 70px;
 }
 
-.py-3{
+.py-3 {
     padding-bottom: 0;
 }
 
@@ -197,6 +225,16 @@ footer{
     background-color: transparent;
     width: 80%;
     color: #c0c0c0;
+
+
+}
+
+
+.card-body {
+
+    background-image: url(../images/post_it_note.webp);
+
+
 }
 
 .card-text {
@@ -204,13 +242,15 @@ footer{
 }
 
 .card-img-top {
-    border-radius: 40px;    
+
 
     box-shadow: 5px 5px 10px #000000;
 }
-.approval {    
+
+
+.approval {
     font-weight: bold;
-    color: Black; 
+    color: Black;
     font-size: 15px;
     text-decoration: underline;
 }
@@ -226,7 +266,7 @@ footer{
 
 .post-link:hover,
 .page-link {
-    color: #3DA6FF ;
+    color: #3DA6FF;
 }
 
 .post-title {
@@ -237,7 +277,7 @@ footer{
 .post-subtitle {
     margin-left: 5%;
     color: #c0c0c0;
-} 
+}
 
 .link {
     color: #23BBBB;
@@ -253,8 +293,8 @@ footer{
 /* Buttons */
 .btn-close-conf,
 .prev-step,
-.btn-edit, 
-.btn-comment-edit, 
+.btn-edit,
+.btn-comment-edit,
 .btn-testimonial-edit {
     color: #fff;
     background: #e9761b;
@@ -272,7 +312,7 @@ footer{
     margin-right: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
-    justify-self: center;   
+    justify-self: center;
 }
 
 .next-step:hover,
@@ -284,8 +324,8 @@ footer{
 }
 
 .btn-delete-conf,
-.btn-delete, 
-.btn-comment-delete, 
+.btn-delete,
+.btn-comment-delete,
 .btn-testimonial-delete {
     color: #fff;
     background: #e9761b;
@@ -306,8 +346,9 @@ footer{
     justify-content: center;
     align-self: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
+
 .masthead-text {
     z-index: 2;
     justify-self: center;
@@ -315,6 +356,7 @@ footer{
     background-color: #445261;
     box-shadow: 5px 5px 10px black;
 }
+
 .masthead-image img {
     display: flex;
     flex-direction: column;
@@ -325,17 +367,21 @@ footer{
     justify-self: center;
     box-shadow: 5px 5px 10px black;
 }
+
 .masthead .row {
     align-items: center;
 }
+
 .article-colour {
     color: #c0c0c0;
     background-color: #445261;
     box-shadow: 5px 5px 10px black;
 }
+
 .comment-colour {
     color: Black;
 }
+
 .wizard {
     display: flex;
     position: relative;
@@ -349,10 +395,12 @@ footer{
     justify-self: center;
     min-width: 30%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center;   
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
+
 .wizardSignUp {
     display: flex;
     position: relative;
@@ -366,10 +414,12 @@ footer{
     justify-self: center;
     min-width: 0%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center;   
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
+
 .wizardComment {
     display: none;
     position: absolute;
@@ -380,33 +430,39 @@ footer{
     background-color: #445261;
     box-shadow: 5px 5px 10px black;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     color: #c0c0c0;
     justify-self: center;
     min-width: 40%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center;   
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
-.commentForm{
-    align-items: center;    /* Vertically center */
+
+.commentForm {
+    align-items: center;
+    /* Vertically center */
     justify-items: center;
     justify-content: center;
 }
-.submitButton{
+
+.submitButton {
     position: relative;
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
 }
-.closeButton{
+
+.closeButton {
     position: relative;
-    left:45%;
+    left: 45%;
     color: #000000;
     font-weight: 900;
     font-size: large;
 }
+
 .postholder {
     display: flex;
     justify-content: center;
@@ -414,33 +470,42 @@ footer{
     box-shadow: 5px 5px 10px black;
     color: black;
     justify-self: center;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center;  
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
+
 .comment {
     min-width: 500px;
     display: flex;
     justify-content: center;
     border-radius: 20px;
     background-color: #445261;
+
+    background-image: url(../images/post_it_note.webp);
+    
     box-shadow: 5px 5px 10px black;
     margin: 50px;
     color: #c0c0c0;
     justify-self: center;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
     justify-items: center;
 }
+
 .form-step {
     display: none;
 }
+
 .form-step.active {
     display: flex;
     justify-content: center;
-    align-items: center;    /* Vertically center */
+    align-items: center;
+    /* Vertically center */
     justify-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .errorlist {
@@ -457,9 +522,9 @@ footer{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    display: flex;  
-    justify-content: center; 
-    align-items: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-step input {
@@ -485,13 +550,16 @@ footer{
 .alert-dismissible {
     color: #c0c0c0;
 }
+
 /* Media Query for Tablet Screens */
 @media screen and (max-width: 991px) {
     .face-container {
-        
-        display: none; /* Hide the elf container on tablet screens and smaller */
+
+        display: none;
+        /* Hide the elf container on tablet screens and smaller */
     }
-    .christmas-lights-bottom{
+
+    .christmas-lights-bottom {
         display: flex;
     }
 }
