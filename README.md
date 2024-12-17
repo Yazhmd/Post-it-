@@ -692,6 +692,7 @@ Value: cloudinary://************************
 
 All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
 - [ChatGPT](https://chatgpt.com/) for creating content for events posts.
+- [Visit Lancashire](https://www.visitlancashire.com/) for content for the posts.
 
 ### **Media References**
 - [Pexels](https://www.pexels.com/) for images used on this site. credit to Ivan Georgiev.
