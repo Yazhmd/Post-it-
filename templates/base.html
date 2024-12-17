@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,33 +24,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-   <!-- Custom CSS-->
-   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-   <!-- Add Favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/favicon-180x180.png' %}" >
-   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-   <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon/favicon-16x16.png' %}">
+    <!-- Add Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/favicon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon/favicon-16x16.png' %}">
 
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light nav-bg">
         <div class="container-fluid">
             <div class="navbar-brand">
-               <img loading="lazy" src="{% static 'images/logo.webp' %}" width="30" height="30"
-            alt="PostIt written on a yellow postit note. Used as the PostIt Logo.">
-            <span class="brand-text">Post It</span>
+                <a class="nav-link" href="{% url 'home' %}">
+                    <img loading="lazy" src="{% static 'images/logo.webp' %}" width="30" height="30"
+                        alt="PostIt written on a yellow postit note. Used as the PostIt Logo.">
+                    <span class="brand-text">Post It</span></a>
             </div>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -76,24 +78,25 @@
                             href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
-                </ul >
-            </div >
-        </div >
+                </ul>
+            </div>
+        </div>
     </nav>
-     <!-- Add the Christmas Lights div at the bottom of the navbar -->
-     <div class="christmas-lights christmas-lights-top"></div>
- 
+    <!-- Add the Christmas Lights div at the bottom of the navbar -->
+    <div class="christmas-lights christmas-lights-top"></div>
 
 
-     <!-- displaying Django messages -->
-     <div class="container">
+
+    <!-- displaying Django messages -->
+    <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2 ">
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible
                     fade show notify" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn-close btn-close-msg" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-msg" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
                 </div>
                 {% endfor %}
             </div>
@@ -109,41 +112,43 @@
 
     <div class="christmas-lights christmas-lights-bottom"></div>
 
-    
 
-       <!-- Footer -->
-       <footer class="footer mt-auto py-3 dark-bg">
-    
-           
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 dark-bg">
+
+
 
 
         <!-- Social -->
         <p class="d-flex justify-content-around foot-text align-items-center">
             <!-- GitHub -->
             <a class="foot-links" href="https://facebook.com" target="_blank" rel="noopener"
-            aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
-            
-            
+                aria-label="Visit our facebook page (opens in a new tab)"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+
+
             {% block Copyright %}
             &copy; Caffinated Coders 2024
             {% endblock Copyright %}
-            
+
             <!-- LinkedIn -->
             <a class="foot-links" href="https://www.twitter.com" target="_blank" rel="noopener"
-            aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+                aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
-        
+
     </footer>
 
     <!-- Scripts -->
-   <script src="{% static 'js/christmas.js' %}"></script>
+    <script src="{% static 'js/christmas.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-     <!-- Font Awesome kit -->
-     <script src="https://kit.fontawesome.com/1074747785.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/1074747785.js" crossorigin="anonymous"></script>
     {% block extras %}
     {% endblock %}
-    
+
 </body>
+
 </html>
