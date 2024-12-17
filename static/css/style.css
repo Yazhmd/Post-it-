@@ -43,7 +43,6 @@ body {
     transition: color 0.3s ease;
     font-size: 20px;
 }
-
 .nav-link:hover {
     color: #3DA6FF !important; 
 }
@@ -208,7 +207,6 @@ footer{
 
 .card-img-top {
     border-radius: 40px;    
-
     box-shadow: 5px 5px 10px #000000;
 }
 .approval {    
@@ -223,7 +221,6 @@ footer{
     color: #000000;
     left: 50px;
     font-size: 18px;
-    color: #000000;
     font-weight: 600;
 }
 
@@ -241,7 +238,17 @@ footer{
     margin-left: 5%;
     color: #c0c0c0;
 } 
+.bg-color-1 {
+    background-color: #ffff99; 
+}
 
+.bg-color-2 {
+    background-color: #ff65a3; 
+}
+
+.bg-color-3 {
+    background-color: #3DA6FF; 
+}
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -265,7 +272,6 @@ footer{
     box-shadow: 5px 5px 10px black;
     justify-self: center;
 }
-
 .btn-signup {
     color: black;
     background: #ff65a3;
@@ -301,7 +307,44 @@ footer{
     color: #fff;
     background: #e9761b;
 }
+.pagination-container {
+    position: relative; /* Relative to contain the absolutely positioned buttons */
+    width: 100%; /* Ensure it spans the entire width of the viewport */
+}
 
+.btn-page-prev,
+.btn-page-next {
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-page-prev {
+    left: 25%; 
+    margin-top: 20px;
+}
+
+.btn-page-next {
+    right: 25%; 
+}
+
+.btn-page-prev:hover,
+.btn-page-next:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    color: #fff;
+}
+
+.pagination {
+    margin: 0; 
+    padding: 0;
+    list-style: none; /
+}
 .scale {
     width: 100%;
     height: auto;
@@ -421,7 +464,6 @@ footer{
 .postholder {
     display: flex;
     justify-content: center;
-    background-color: #ffff99;
     box-shadow: 5px 5px 10px black;
     color: black;
     justify-self: center;
@@ -495,6 +537,73 @@ footer{
 .btn-close-msg,
 .alert-dismissible {
     color: #c0c0c0;
+}
+.bio-card-1 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #ffff99;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+
+.bio-card-2 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #ff65a3;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+
+.bio-card-3 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #3DA6FF;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+/* Optional: Add a default style to fallback */
+.bio-card {
+    transition: background-color 0.3s ease;
+}
+.bio-links {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+.bio-links:hover {
+    transform: scale(1.2);
+}
+.bio-space {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
 }
 /* Media Query for Tablet Screens */
 @media screen and (max-width: 991px) {
