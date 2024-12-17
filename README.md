@@ -9,9 +9,9 @@
 
 Post It is a website that aims to keep users informed about upcoming comunity events. This website has been developed as part of the Code Institute’s Full-Stack Developer Bootcamp course and is our final Hackathon project - focusing on a Django framework, Database manipulation, and CRUD functionality, and working as a team using agile methodologies. This project is for educational purposes only.
 
-View live site here : [Post It](add_live_sie_URL)  
+View live site here : [Post It](https://post-it-project-a1c97a5ab437.herokuapp.com/)  
   
-For Admin access with relevant sign-in information: [Post It Admin](add_live_site_admin-URL)
+For Admin access with relevant sign-in information: [Post It Admin](https://post-it-project-a1c97a5ab437.herokuapp.com/admin)
 
 <hr>
 
