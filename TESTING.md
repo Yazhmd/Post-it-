@@ -152,5 +152,9 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 
 | No. | Bug | Solved | Fix | Commit no. |
 | --- | ---- | ----- | --- | ---------- |
+| 1 | Edited comments required approval | Yes | Amend cooment_edit to comment.approved = True | ec3f833 |
+| 2 | Elf Character moved under the footer | Yes | Amended Elf position | 6b43f6b | 
+| 3 | Posts ordering by created date | Yes | Set order status to -event_start | e228c19 |
+| 4 | Could not access database | Yes | Extra database had been added to requirements.txt. No issues once removed | 85e76c4 |
 
 ### Known bugs
