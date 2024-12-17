@@ -23,6 +23,8 @@ document.addEventListener('mousemove', (event) => {
         // Move the eye
         eye.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
+
+    
 });
 
 document.addEventListener('DOMContentLoaded', () => {

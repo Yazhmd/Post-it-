@@ -35,7 +35,7 @@ body {
 
 .link,
 .nav-link{
-    color: #FF914D !important; 
+    color: white !important; 
     transition: color 0.3s ease;
     font-size: 20px;
 }
@@ -164,7 +164,7 @@ body {
 }
 
 .foot-links{
-    color: #FF914D !important;
+    color: white !important;
     font-size: 30px;
     margin-bottom: 6px;
 }
@@ -220,7 +220,7 @@ footer{
     color: #000000;
     left: 50px;
     font-size: 18px;
-    color: #c0c0c0;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -334,7 +334,7 @@ footer{
     box-shadow: 5px 5px 10px black;
 }
 .comment-colour {
-    color: #c0c0c0;
+    color: Black;
 }
 .wizard {
     display: flex;
@@ -410,10 +410,9 @@ footer{
 .postholder {
     display: flex;
     justify-content: center;
-    border-radius: 30px;
-    background-color: #445261;
+    background-color: #ffff99;
     box-shadow: 5px 5px 10px black;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     flex-direction: column; 
     align-items: center;    /* Vertically center */
