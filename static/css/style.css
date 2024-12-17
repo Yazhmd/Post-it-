@@ -33,7 +33,11 @@ body {
     font-size: 20px;
 }
 
-.link,
+.link {
+    color: black !important; 
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
 .nav-link{
     color: white !important; 
     transition: color 0.3s ease;
@@ -49,7 +53,6 @@ body {
     text-decoration: underline; 
     font-weight: bold; 
 }
-/* Face (Elf) Container */
 /* Face (Elf) Container */
 .face-container {
     position: fixed; /* Fixed position to lock it to the viewport */
@@ -252,7 +255,6 @@ footer{
 
 /* Buttons */
 .btn-close-conf,
-.prev-step,
 .btn-edit, 
 .btn-comment-edit, 
 .btn-testimonial-edit {
@@ -264,15 +266,24 @@ footer{
     justify-self: center;
 }
 
-.next-step,
 .btn-signup {
-    color: #fff;
-    background: #29e810a1;
+    color: black;
+    background: #ff65a3;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     justify-self: center;   
+}
+.next-step,
+.prev-step {
+    color: black;
+    background: #7afcff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    justify-self: center; 
 }
 
 .next-step:hover,
@@ -342,10 +353,10 @@ footer{
     top: 0vh;
     justify-content: center;
     border-radius: 30px;
-    background-color: #445261;
+    background-color: #7afcff;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     min-width: 30%;
     z-index: 10;
@@ -359,10 +370,10 @@ footer{
     top: 0vh;
     justify-content: center;
     border-radius: 30px;
-    background-color: #445261;
+    background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     min-width: 0%;
     z-index: 10;
