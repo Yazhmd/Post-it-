@@ -35,7 +35,7 @@ body {
 
 .link,
 .nav-link{
-    color: #FF914D !important; 
+    color: white !important; 
     transition: color 0.3s ease;
     font-size: 20px;
 }
@@ -93,8 +93,7 @@ body {
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
 .christmas-lights {
-    position: fixed;
-    top: 50px; /* Fixed to the bottom of the viewport */
+   
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     display: flex;
@@ -104,6 +103,19 @@ body {
     flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
     z-index: 10; /* Ensure it's above other content */
 }
+
+.christmas-lights-top{
+    position: fixed;
+    top: 50px; 
+}
+
+.christmas-lights-bottom{
+    display: none;
+    position: fixed;
+    bottom: 52px; /* Fixed to the bottom of the viewport */
+}
+
+
 
 /* Default bulb size */
 .christmas-lights .bulb {
@@ -152,7 +164,7 @@ body {
 }
 
 .foot-links{
-    color: #FF914D !important;
+    color: white !important;
     font-size: 30px;
     margin-bottom: 6px;
 }
@@ -208,7 +220,7 @@ footer{
     color: #000000;
     left: 50px;
     font-size: 18px;
-    color: #c0c0c0;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -322,7 +334,7 @@ footer{
     box-shadow: 5px 5px 10px black;
 }
 .comment-colour {
-    color: #c0c0c0;
+    color: Black;
 }
 .wizard {
     display: flex;
@@ -398,10 +410,9 @@ footer{
 .postholder {
     display: flex;
     justify-content: center;
-    border-radius: 30px;
-    background-color: #445261;
+    background-color: #ffff99;
     box-shadow: 5px 5px 10px black;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     flex-direction: column; 
     align-items: center;    /* Vertically center */
@@ -475,8 +486,12 @@ footer{
     color: #c0c0c0;
 }
 /* Media Query for Tablet Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .face-container {
+        
         display: none; /* Hide the elf container on tablet screens and smaller */
+    }
+    .christmas-lights-bottom{
+        display: flex;
     }
 }
