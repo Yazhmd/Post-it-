@@ -10,7 +10,7 @@
             <div class="row">
                 {% for bio in bio_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 bio-card bio-card-{{ forloop.counter }}">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in bio.profile_image.url %}
@@ -20,15 +20,18 @@
                                 <img class="card-img-top" src=" {{ bio.profile_image.url }}" alt="{{ bio.title }}">
                                 {% endif %}
                                 <div class="image-flash">
+                                    <br>
                                     <h2 class="author">Name: {{ bio.name }}</h2>
                                 </div>
                             </div>
                             <h3 class="card-title">Project role: {{ bio.title }}</h3>
                             <hr />
-                            <a class="foot-links" href="{{ bio.git_link }}" target="_blank" rel="noopener"
+                            <div class="bio-space">
+                            <a class="bio-links" href="{{ bio.git_link }}" target="_blank" rel="noopener"
             aria-label="Visit my GitHub profile page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-            <a class="foot-links" href="{{ bio.linkedin_link }}" target="_blank" rel="noopener"
+            <a class="bio-links" href="{{ bio.linkedin_link }}" target="_blank" rel="noopener"
             aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
