@@ -69,7 +69,7 @@ All HTML pages were validated and the pages generated solely by myself received 
 | ---- | ---- | ------- | ------ | ----- | -----|
 | Config | n/a | n/a | n/a | [No Errors](documentation/testing/config_urls.png) | n/a |
 | Event | [No Errors](documentation/testing/event_admin.png) | [No Errors](documentation/testing/event_forms.png) | [No Errors](documentation/testing/event_models.png) | [No Errors](documentation/testing/event_urls.png) | [No Errors](documentation/testing/event_views.png) |
-| Bio | 
+| Bio | [No Errors](documentation/testing/bio_admin.png) | n/a | [No Errors](documentation/testing/bio_models.png) | [No Errors](documentation/testing/bio_urls.png) | [No Errors](documentation/testing/bio_views.png) |
 
 <hr>
 
