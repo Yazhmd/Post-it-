@@ -7,28 +7,27 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h1>{% trans "Sign In" %}</h1>
+            
+               
 
-            <p class="contrast">{% blocktrans %}Welcome back to Post It. To leave a comment please log in. If
-                you
-                have not created an account yet, then please <strong><a class="link" href="{{ signup_url }}">sign up</a></strong>
-                first.{% endblocktrans %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <form class="login contrast" method="POST" action="{% url 'account_login' %}">
+<div class="wizard">
+            <h2>Welcome back to PostIt,</h2> 
+            <h3>{% trans "Sign In" %}</h3>
+
+   
+            <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
-                {{ form.as_p }}
+                <label for="id_login">Username</label><br>
+                {{ form.login }} <br>
+                <label for="id_password">Password</label><br>
+                {{ form.password }}
+                <hr>
+     
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
                 <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
             </form>
-        </div>
-    </div>
+             Don't have an account yet?<br> <a class="link" href="{{ signup_url }}">sign up</a> <hr>
 </div>
 {% endblock %}
