@@ -45,7 +45,7 @@ All HTML pages were validated and the pages generated solely by myself received 
 | ---- | ----- | ------|
 | Blogs | 0 | 0 |
 | Blog Post | 0 | 0 |
-| Register | 4 | 0 |
+| Register | 0 | 0 |
 | Log in | 0 | 0 |
 | Log out | 0 | 0 |
 | Devs | 0 | 0 |
