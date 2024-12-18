@@ -123,18 +123,23 @@ body {
     gap: 8px;
     /* Space between bulbs */
     padding: 10px;
-    z-index: 10; /* Ensure it's above other content */
+    z-index: 10;
+    /* Ensure it's above other content */
 }
-.christmas-lights-top{
+
+.christmas-lights-top {
     position: fixed;
     top: 60px;
-    z-index: 25; 
+    z-index: 25;
 }
-.christmas-lights-bottom{
+
+.christmas-lights-bottom {
     position: fixed;
-    bottom: 52px; /* Fixed to the bottom of the viewport */
+    bottom: 52px;
+    /* Fixed to the bottom of the viewport */
     z-index: 1;
 }
+
 /* Default bulb size */
 .christmas-lights .bulb {
     width: 12px;
@@ -142,6 +147,7 @@ body {
     border-radius: 50%;
     animation: flicker 1s infinite;
 }
+
 /* Different colors for bulbs */
 .christmas-lights .bulb:nth-child(2) {
     background-color: green;
@@ -199,6 +205,11 @@ footer {
 
 }
 
+
+nav {
+    padding-bottom: 20px;
+
+}
 
 main {
 
@@ -276,7 +287,8 @@ main {
 .post-subtitle {
     margin-left: 5%;
     color: black;
-} 
+}
+
 .bg-color-1 {
     background-color: #ffff99;
 }
@@ -302,7 +314,7 @@ main {
 
 /* Buttons */
 .btn-close-conf,
-.btn-edit, 
+.btn-edit,
 .btn-comment-edit {
     color: black;
     background: #ffff99;
@@ -321,6 +333,7 @@ main {
     box-shadow: 5px 5px 10px black;
     justify-self: center;
 }
+
 .btn-signup-done {
     color: black;
     background: #ffff99;
@@ -328,8 +341,9 @@ main {
     margin-right: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
-    justify-self: center;   
+    justify-self: center;
 }
+
 .next-step,
 .prev-step {
     color: black;
@@ -350,9 +364,8 @@ main {
 }
 
 .btn-delete-conf,
-.btn-delete, 
-.btn-comment-delete
- {
+.btn-delete,
+.btn-comment-delete {
     color: black;
     background: #ff65a3;
 }
@@ -397,7 +410,7 @@ main {
 .pagination {
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
 }
 
 .scale {
@@ -450,13 +463,15 @@ main {
 .comment-colour {
     color: Black;
 }
+
 .comment-h3 {
     background-color: #ffff99;
     box-shadow: 5px 5px 10px black;
     color: black;
     padding: 10px;
-    
+
 }
+
 .wizard {
     display: flex;
     position: relative;
@@ -502,7 +517,7 @@ main {
     background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     color: black;
     justify-self: center;
     min-width: 40%;
@@ -545,7 +560,7 @@ main {
     align-items: center;
     /* Vertically center */
     justify-items: center;
- 
+
 }
 
 .comment {
@@ -616,11 +631,12 @@ main {
 
 .btn-close-msg,
 .alert-dismissible {
-   
+
     color: black;
     background-color: #ffff99;
-    
+
 }
+
 .alert-dismissible {
     margin-top: 30px;
     font-weight: 600;
@@ -637,9 +653,9 @@ main {
     color: black;
     justify-self: center;
     min-width: 30%;
-    flex-direction: column; 
-    align-items: center;    
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .bio-card-2 {
@@ -653,9 +669,9 @@ main {
     color: black;
     justify-self: center;
     min-width: 30%;
-    flex-direction: column; 
-    align-items: center;    
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .bio-card-3 {
@@ -669,10 +685,11 @@ main {
     color: black;
     justify-self: center;
     min-width: 30%;
-    flex-direction: column; 
-    align-items: center;    
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
+
 /* Add a default style to fallback */
 .bio-card {
     transition: background-color 0.3s ease;
@@ -701,5 +718,5 @@ main {
         display: none;
         /* Hide the elf container on tablet screens and smaller */
     }
-    
+
 }
