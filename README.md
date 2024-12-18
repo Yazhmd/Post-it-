@@ -202,21 +202,21 @@ CSRF (Cross-Site Request Forgery) tokens are included in every form to help auth
 
 It was important to us from the beginning that Post It be accessible to an unregistered user, in some capacity. We wanted the website to showcase the importance of community events and the positive impact they can bring. The following is a breakdown of the site's accessibility for registered/unregistered users:
 
-| Feature | Unregistered User | Registered, Logged-In User |
-|-----------|-------------------|-----------------|
-| Paginated Events | Visible | Visible |
-| Event post | Visible | Visible |
-| Comments | Visible but not able to add/amend | Visible with full feature interaction |
+| Feature          | Unregistered User                 | Registered, Logged-In User            |
+|------------------|-----------------------------------|---------------------------------------|
+| Paginated Events | Visible                           | Visible                               |
+| Event post       | Visible                           | Visible                               |
+| Comments         | Visible but not able to add/amend | Visible with full feature interaction |
 
 ## CRUD Functionality
 
 Users are able to Create, Read, Update and Delete their shared information on Post It. Some features make full CRUD functionality available, whilst others present the necessary options only. Here is the CRUD breakdown for Post It:
 
-| Feature | Create | Read | Update | Delete |
-|---------|--------|------|--------|--------|
-| Profile | Created upon registration | No | No | Full profile deletion is currently only available to Admin upon user account deletion |
-| Posts | Yes for admin only | Yes | Yes for admin only | Yes for admin only |
-| Comments | Yes for registered users | Yes | Yes for registered users | Yes for registered users | 
+| Feature  | Create                    | Read | Update                   | Delete                                                                                |
+|----------|---------------------------|------|--------------------------|---------------------------------------------------------------------------------------|
+| Profile  | Created upon registration | No   | No                       | Full profile deletion is currently only available to Admin upon user account deletion |
+| Posts    | Yes for admin only        | Yes  | Yes for admin only       | Yes for admin only                                                                    |
+| Comments | Yes for registered users  | Yes  | Yes for registered users | Yes for registered users                                                              |
 
 ## Feature showcase
 
@@ -231,25 +231,20 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 
 <details open>
   <summary>Header & Navigation - unregistered users</summary>
-  <img src="documentation/images/nav.png">
+  <img src="documentation/images/nav-unregistered.png">
 </details>  
 
 <details open>
   <summary>Header & Navigation - registered users</summary>
-  <img src="documentation/images/navlogin.png">
+  <img src="documentation/images/nav-registered.png">
 </details> 
 
 <details open>
   <summary>Footer - all users</summary>
-  <img src="documentation/images/footer.png">
+  <img src="documentation/images/footer-all-users.png">
 </details>  
 
-**Paginated Posts**
-
-<details open>
-  <summary>Paginated posts - all users</summary>
-  <img src="documentation/images/page.png">
-</details> 
+ 
 
 **Event Post**
 
@@ -271,19 +266,25 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 </details>
 
 **Registration/Sign Up**
+<summary>Registration - all users</summary>
 
 <details open>
-  <summary>Registration - all users</summary>
-  <img src="documentation/images/signup1.png">
-  <img src="documentation/images/signup2.png">
-  <img src="documentation/images/signup3.png">
+  <img src="documentation/images/registration-signup1.png">
+</details>
+
+<details open>
+  <img src="documentation/images/registration-signup2.png">
+</details>
+
+<details open>
+  <img src="documentation/images/registration-signup3.png">
 </details>
 
 **Sign In**
 
 <details open>
   <summary>Sign in - all users</summary>
-  <img src="documentation/images/signin.png">
+  <img src="documentation/images/sign-up.png">
 </details>
 
 **Sign Out**
