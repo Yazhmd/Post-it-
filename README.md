@@ -107,10 +107,34 @@ We chose to follow the MoSCoW Prioritization method for Post It, identifying and
 
 User stories and features recorded and managed on [GitHub Projects](https://github.com/users/Yazhmd/projects/4)
 
-### Visitor User Stories
+### User Stories Key
 
-| User Story | Priority |
-|----------------------------------------------------------------------------------------------------------------------------|---------------|
+| Color | Priority        | MoSCoW Priority Description                                                 |
+|:-----:|:----------------|:----------------------------------------------------------------------------|
+|  🟢   | **Must Have**   | Essential/mandatory elements that must be included on the project           |
+|  🟡   | **Should Have** | Important elements that should only be included with careful consideration. |
+|  🟠   | **Could Have**  | Desirable elements that could be included if resources and time allow.      |
+|  🔴   | **Won't Have**  | Elements that are **out-of-scope**.                                         |
+
+
+
+
+|                  Title                  | User Story                                                                                                                                                       | MoSCoW |
+|:---------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:------:|
+| Admin Story : Admin Dashboard (Backend) | As an admin, I want a dashboard to manage events so that I can efficiently track and modify event details.                                                       |   🟢   |
+|    User Story : User Authentication     | As a system, I want to implement user authentication so that only authorized users can access certain features of the platform.                                  |   🟢   |
+|   Admin Story : Admin Event Creation    | As an admin, I want to create an event with basic details so that users can view and interact with the event information.                                        |   🟢   |
+|      User Story : User Event Feed       | As a user, I want to view all posted events in a centralized feed so that I can stay informed about upcoming activities.                                         |   🟡   |
+|      User Story : Event Commenting      | As a user, I want to comment on events so that I can engage with event content and interact with other users.                                                    |   🟠   |
+|    User Story: Social Account Login     | As a user, I want to log in to the Post It site using my existing social media accounts so that I can quickly register and access the site's features.           |   🟠   |
+|    User Story: User Profile Account     | As a user, I want to be able to create a profile where I can view certain events and add them to my watch list and receive notifications on any upcoming events. |   🔴   |
+|       User Story : Business Pages       | As a business, I want to sign up and advertise when I will be attending events so that I can promote my presence and attract attendees.                          |   🔴   |
+| User Story : Picture Gallery for Posts  | As a community member, I want to post images of my time spent at an event so that I can share my experiences with others.                                        |   🔴   |
+
+
+
+
+
 
 ## Scope Plane
 
@@ -270,13 +294,12 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 
 <details open>
   <img src="documentation/images/registration-signup1.png">
-</details>
-
-<details open>
+ 
+ 
   <img src="documentation/images/registration-signup2.png">
-</details>
+ 
 
-<details open>
+ 
   <img src="documentation/images/registration-signup3.png">
 </details>
 
@@ -299,6 +322,10 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 <details open>
   <summary>Admin panel</summary>
   <img src="documentation/images/admin.png">
+
+  Admin panel for posting events
+  <img src="documentation/images/admin_post_panel.png">
+
 </details>
 
 ## Future Features
@@ -695,7 +722,7 @@ Value: cloudinary://************************
 ### **Content References**
 
 All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
-- [ChatGPT](https://chatgpt.com/) for creating content for events posts.
+- [ChatGPT](https://chatgpt.com/) and [Perplexity](https://www.perplexity.ai/)  for creating content for events posts.
 - [Visit Lancashire](https://www.visitlancashire.com/) for content for the posts.
 
 ### **Media References**
@@ -717,3 +744,5 @@ The following sites complemented my learning for this project alongside the [Cod
 - Heath would like to thank his amazing partner Jolene who is the inspiration for all that he does, and his little doggy Spencer who reminds him that life is not all about being stuck at a keyboard.
 
 - Sazzzel would like to thank her husband for being supportive throughout my course, for putting up with her.
+
+- Yazdan, as a the scrum master for this project i would like to thank Heath and Sazzzel for there amazing hard work and dedication towards this project.
