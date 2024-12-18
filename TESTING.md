@@ -48,6 +48,7 @@ All HTML pages were validated and the pages generated solely by myself received 
 | Register | 4 | 0 |
 | Log in | 0 | 0 |
 | Log out | 0 | 0 |
+| Devs | 0 | 0 |
 
 <hr>
 

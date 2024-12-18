@@ -33,13 +33,16 @@ body {
     font-size: 20px;
 }
 
-.link,
-.nav-link{
-    color: #FF914D !important; 
+.link {
+    color: black !important; 
     transition: color 0.3s ease;
     font-size: 20px;
 }
-
+.nav-link{
+    color: white !important; 
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
 .nav-link:hover {
     color: #3DA6FF !important; 
 }
@@ -49,7 +52,6 @@ body {
     text-decoration: underline; 
     font-weight: bold; 
 }
-/* Face (Elf) Container */
 /* Face (Elf) Container */
 .face-container {
     position: fixed; /* Fixed position to lock it to the viewport */
@@ -93,8 +95,7 @@ body {
 /* Position the lights at the bottom of the navbar */
 /* Christmas lights container */
 .christmas-lights {
-    position: fixed;
-    top: 50px; /* Fixed to the bottom of the viewport */
+   
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     display: flex;
@@ -104,6 +105,19 @@ body {
     flex-wrap: wrap; /* Wrap bulbs to fit smaller screens */
     z-index: 10; /* Ensure it's above other content */
 }
+
+.christmas-lights-top{
+    position: fixed;
+    top: 50px; 
+}
+
+.christmas-lights-bottom{
+    position: fixed;
+    bottom: 52px; /* Fixed to the bottom of the viewport */
+    z-index: 1;
+}
+
+
 
 /* Default bulb size */
 .christmas-lights .bulb {
@@ -152,7 +166,7 @@ body {
 }
 
 .foot-links{
-    color: #FF914D !important;
+    color: white !important;
     font-size: 30px;
     margin-bottom: 6px;
 }
@@ -193,7 +207,6 @@ footer{
 
 .card-img-top {
     border-radius: 40px;    
-
     box-shadow: 5px 5px 10px #000000;
 }
 .approval {    
@@ -208,7 +221,6 @@ footer{
     color: #000000;
     left: 50px;
     font-size: 18px;
-    color: #c0c0c0;
     font-weight: 600;
 }
 
@@ -226,7 +238,17 @@ footer{
     margin-left: 5%;
     color: #c0c0c0;
 } 
+.bg-color-1 {
+    background-color: #ffff99; 
+}
 
+.bg-color-2 {
+    background-color: #ff65a3; 
+}
+
+.bg-color-3 {
+    background-color: #3DA6FF; 
+}
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -240,7 +262,6 @@ footer{
 
 /* Buttons */
 .btn-close-conf,
-.prev-step,
 .btn-edit, 
 .btn-comment-edit, 
 .btn-testimonial-edit {
@@ -251,16 +272,24 @@ footer{
     box-shadow: 5px 5px 10px black;
     justify-self: center;
 }
-
-.next-step,
 .btn-signup {
-    color: #fff;
-    background: #29e810a1;
+    color: black;
+    background: #ff65a3;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     justify-self: center;   
+}
+.next-step,
+.prev-step {
+    color: black;
+    background: #7afcff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    justify-self: center; 
 }
 
 .next-step:hover,
@@ -278,7 +307,44 @@ footer{
     color: #fff;
     background: #e9761b;
 }
+.pagination-container {
+    position: relative; /* Relative to contain the absolutely positioned buttons */
+    width: 100%; /* Ensure it spans the entire width of the viewport */
+}
 
+.btn-page-prev,
+.btn-page-next {
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-page-prev {
+    left: 25%; 
+    margin-top: 20px;
+}
+
+.btn-page-next {
+    right: 25%; 
+}
+
+.btn-page-prev:hover,
+.btn-page-next:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    color: #fff;
+}
+
+.pagination {
+    margin: 0; 
+    padding: 0;
+    list-style: none; /
+}
 .scale {
     width: 100%;
     height: auto;
@@ -322,7 +388,7 @@ footer{
     box-shadow: 5px 5px 10px black;
 }
 .comment-colour {
-    color: #c0c0c0;
+    color: Black;
 }
 .wizard {
     display: flex;
@@ -330,10 +396,10 @@ footer{
     top: 0vh;
     justify-content: center;
     border-radius: 30px;
-    background-color: #445261;
+    background-color: #7afcff;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     min-width: 30%;
     z-index: 10;
@@ -347,10 +413,10 @@ footer{
     top: 0vh;
     justify-content: center;
     border-radius: 30px;
-    background-color: #445261;
+    background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     min-width: 0%;
     z-index: 10;
@@ -398,10 +464,8 @@ footer{
 .postholder {
     display: flex;
     justify-content: center;
-    border-radius: 30px;
-    background-color: #445261;
     box-shadow: 5px 5px 10px black;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     flex-direction: column; 
     align-items: center;    /* Vertically center */
@@ -474,9 +538,78 @@ footer{
 .alert-dismissible {
     color: #c0c0c0;
 }
+.bio-card-1 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #ffff99;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+
+.bio-card-2 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #ff65a3;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+
+.bio-card-3 {
+    display: flex;
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+    background-color: #3DA6FF;
+    box-shadow: 5px 5px 10px black;
+    margin: 15%;
+    color: black;
+    justify-self: center;
+    min-width: 30%;
+    z-index: 10;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    justify-items: center; 
+}
+/* Optional: Add a default style to fallback */
+.bio-card {
+    transition: background-color 0.3s ease;
+}
+.bio-links {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+.bio-links:hover {
+    transform: scale(1.2);
+}
+.bio-space {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
 /* Media Query for Tablet Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .face-container {
+        
         display: none; /* Hide the elf container on tablet screens and smaller */
     }
+    
 }

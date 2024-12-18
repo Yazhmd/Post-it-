@@ -134,11 +134,10 @@ body {
     top: 50px;
 }
 
-.christmas-lights-bottom {
-    display: none;
+.christmas-lights-bottom{
     position: fixed;
-    bottom: 52px;
-    /* Fixed to the bottom of the viewport */
+    bottom: 52px; /* Fixed to the bottom of the viewport */
+    z-index: 1;
 }
 
 
@@ -705,8 +704,5 @@ main {
         display: none;
         /* Hide the elf container on tablet screens and smaller */
     }
-
-    .christmas-lights-bottom {
-        display: flex;
-    }
+    
 }
