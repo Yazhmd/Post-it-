@@ -2,7 +2,7 @@
 
 
 
-![Post It landing page](documentation/final_views/)
+![Post It landing page](documentation/images/responsive_screenshot.png)
 
 
 ## Introduction
@@ -245,6 +245,11 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 ## Feature showcase
 
 *For features showcase screenshots were taken on laptop*
+
+  <summary>Bernard the Elf</summary>
+  <img src="documentation/images/Bernard.png">
+ 
+<br>
 
 **Header/Navigation & Footer**
 
