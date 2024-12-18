@@ -88,13 +88,13 @@ All HTML pages were validated and pages received a 'No errors or warning to show
 
 Lighthouse testing was carried out in Incognito mode to acheive the best result. Performance was lower than preferred due to the site being image heavy. Static images used in the sites design were saved in webp. Image types added by a site admin are at there own discretion and could affect the score. The CDNs used for Bootstrap were also noted in the Lighthouse report as causing issue with performance. This report will be reviewed for future development of Post It to raise this score.
   
-![Lighthouse scores paginated posts](documentation/testing/)
+![Lighthouse scores paginated posts](documentation/testing/lighthouse_paginated.png)
 *Desktop Paginated Blogs Page*
 
-![Lighthouse scores event post](documentation/testing/)
+![Lighthouse scores event post](documentation/testing/lighthouse_event_post.png)
 *Desktop Blog Post Page*  
 
-![Lighthouse scores devs](documentation/testing/)
+![Lighthouse scores devs](documentation/testing/lighthouse_devs.png)
 *Desktop Blog Post Page*
   
 <hr>
@@ -159,6 +159,9 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 | Device      | Feature    | Issue  | Fix  | 
 | ------------| ---------- | ------ |------|
 | MSI Modern 15 H B13M | All features | No issues | None needed |
+| Bison GT2 PRO 5G | All features | No issues | None needed | 
+| iPhone SE | All features | No issues | None needed |
+| 3440*1440 Samsung Ultra Wide | All features | No issues | None needed |
 
 ## Bugs
 
