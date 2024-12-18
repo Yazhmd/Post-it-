@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+/* global bootstrap */
 document.addEventListener('mousemove', (event) => {
     const faceContainer = document.getElementById('face-container');
     const eyes = document.querySelectorAll('.eye');

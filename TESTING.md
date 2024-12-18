@@ -147,11 +147,13 @@ User Stories are documented in the Post It [Github Projects Board](https://githu
 
 ### Dev Tools/Real World Device Testing
 
-Responsive testing was carrired out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally I would have to refresh the page as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. I put this down to a caching issue in Chrome as this issue was not observed when testing on the available real world devices.
+Responsive testing was carrired out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally the page would have to be refreshed as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. It is suspected that this was down to a caching issue.
   
 **Dev Tools Device Testing**
 | Device | Feature | Issue | Fix |
 | ---- | ----- | ---- | ----- |
+| iPhone SE | All features | No issues | None needed |
+| iPad Air | All features | No issues | None needed |
 
 **Real World Device Testing**
 | Device      | Feature    | Issue  | Fix  | 
