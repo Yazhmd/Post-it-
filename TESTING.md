@@ -152,6 +152,8 @@ Responsive testing was carrired out using Google Dev Tools on the devices detail
 **Dev Tools Device Testing**
 | Device | Feature | Issue | Fix |
 | ---- | ----- | ---- | ----- |
+| iPhone SE | All features | No issues | None needed |
+| iPad Air | All features | No issues | None needed |
 
 **Real World Device Testing**
 | Device      | Feature    | Issue  | Fix  | 
