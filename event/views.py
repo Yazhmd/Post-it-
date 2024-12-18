@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.db.models import Q
 from .models import Post, Comment, Location
 from .forms import CommentForm
 
@@ -12,6 +13,17 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "event/index.html"
     paginate_by = 6
+
+
+    def get_queryset(self):
+        queryset = Post.objects.filter(status=1)
+        query = self.request.GET.get('q')
+        if query:
+            queryset = queryset.filter(
+                Q(title__icontains=query) |
+                Q(county__name__icontains=query)
+            )
+        return queryset
 
 
 def post_detail(request, slug):

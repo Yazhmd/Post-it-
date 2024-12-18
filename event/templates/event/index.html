@@ -9,6 +9,18 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Blog Entries Column -->
+        <div class="search">
+            {% if request.path == home_url %}
+            <form role="search" action="{% url 'home' %}">
+                <input id="search" name="q" type="search" placeholder="Search"
+                    aria-label="Search function to filter posts by title, location, or category">
+                <button class="btn-edit" type="submit">Search</button>
+            </form>
+            </div>
+            {% endif %}
+            {% if query %}
+            <h2>Search Results for "{{ query }}"</h2>
+            {% endif %}
         <div class="col-12 mt-3 ">
             <div class="row">
                 {% for post in post_list %}
@@ -35,9 +47,12 @@
                         </div>
                     </div>
                 </div>
-
                 {% endfor %}
                 
+                <!-- If no posts are found -->
+                {% if not post_list %}
+                <p class="contrast">No posts found for your search.</p>
+                {% endif %}
             </div>
         </div>
     </div>
