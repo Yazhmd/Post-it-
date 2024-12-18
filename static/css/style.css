@@ -236,7 +236,7 @@ footer{
 
 .post-subtitle {
     margin-left: 5%;
-    color: #c0c0c0;
+    color: black;
 } 
 .bg-color-1 {
     background-color: #ffff99; 
@@ -365,8 +365,8 @@ footer{
 .masthead-text {
     z-index: 2;
     justify-self: center;
-    color: #D5D5D5;
-    background-color: #445261;
+    color: black;
+    background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
 }
 .masthead-image img {
@@ -383,19 +383,25 @@ footer{
     align-items: center;
 }
 .article-colour {
-    color: #c0c0c0;
-    background-color: #445261;
+    color: black;
+    background-color: #ffff99;
     box-shadow: 5px 5px 10px black;
 }
 .comment-colour {
     color: Black;
+}
+.comment-h3 {
+    background-color: #ffff99;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+    padding: 10px;
+    
 }
 .wizard {
     display: flex;
     position: relative;
     top: 0vh;
     justify-content: center;
-    border-radius: 30px;
     background-color: #7afcff;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
@@ -412,7 +418,6 @@ footer{
     position: relative;
     top: 0vh;
     justify-content: center;
-    border-radius: 30px;
     background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
     margin: 15%;
@@ -430,12 +435,11 @@ footer{
     bottom: -0vh;
     left: 40%;
     justify-content: center;
-    border-radius: 30px;
-    background-color: #445261;
+    background-color: #ff65a3;
     box-shadow: 5px 5px 10px black;
     margin-left: auto;
     margin-right:auto;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     min-width: 40%;
     z-index: 10;
@@ -475,11 +479,10 @@ footer{
     min-width: 500px;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-    background-color: #445261;
+    background-color: #3DA6FF;
     box-shadow: 5px 5px 10px black;
     margin: 50px;
-    color: #c0c0c0;
+    color: black;
     justify-self: center;
     flex-direction: column; 
     align-items: center;    /* Vertically center */
@@ -549,9 +552,8 @@ footer{
     color: black;
     justify-self: center;
     min-width: 30%;
-    z-index: 10;
     flex-direction: column; 
-    align-items: center;    /* Vertically center */
+    align-items: center;    
     justify-items: center; 
 }
 
@@ -566,9 +568,8 @@ footer{
     color: black;
     justify-self: center;
     min-width: 30%;
-    z-index: 10;
     flex-direction: column; 
-    align-items: center;    /* Vertically center */
+    align-items: center;    
     justify-items: center; 
 }
 
@@ -583,12 +584,11 @@ footer{
     color: black;
     justify-self: center;
     min-width: 30%;
-    z-index: 10;
     flex-direction: column; 
-    align-items: center;    /* Vertically center */
+    align-items: center;    
     justify-items: center; 
 }
-/* Optional: Add a default style to fallback */
+/* Add a default style to fallback */
 .bio-card {
     transition: background-color 0.3s ease;
 }
