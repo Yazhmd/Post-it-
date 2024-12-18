@@ -101,9 +101,9 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
 
 ### Wave Accessibility Evaluation 
 
-![WAVE Web Accessibility Evaluation Tools](documentation/testing/)
+![WAVE Web Accessibility Evaluation Tools](documentation/testing/wave.png)
 
-The WAVE report tool was used to check accesability
+The WAVE report tool was used to check accesability. Some cotrast errors were reported in the nav and foot element but it was felt that the colour scheme should remain to match the overall aesthetic.
 
 ## Manual Testing
 
