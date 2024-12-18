@@ -526,9 +526,9 @@ footer{
 }
 
 .delete-modal {
-    background-color: #445261;
-    color: #c0c0c0;
-    border: 2px solid #c0c0c0;
+    background-color: #3DA6FF;
+    color: black;
+    border: 2px solid black;
 }
 
 .date {
@@ -538,7 +538,14 @@ footer{
 
 .btn-close-msg,
 .alert-dismissible {
-    color: #c0c0c0;
+   
+    color: black;
+    background-color: #ffff99;
+    
+}
+.alert-dismissible {
+    margin-top: 30px;
+    font-weight: 600;
 }
 .bio-card-1 {
     display: flex;
