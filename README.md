@@ -722,7 +722,7 @@ Value: cloudinary://************************
 ### **Content References**
 
 All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
-- [ChatGPT](https://chatgpt.com/) for creating content for events posts.
+- [ChatGPT](https://chatgpt.com/) and [Perplexity](https://www.perplexity.ai/)  for creating content for events posts.
 - [Visit Lancashire](https://www.visitlancashire.com/) for content for the posts.
 
 ### **Media References**
@@ -744,3 +744,5 @@ The following sites complemented my learning for this project alongside the [Cod
 - Heath would like to thank his amazing partner Jolene who is the inspiration for all that he does, and his little doggy Spencer who reminds him that life is not all about being stuck at a keyboard.
 
 - Sazzzel would like to thank her husband for being supportive throughout my course, for putting up with her.
+
+- Yazdan, as a the scrum master for this project i would like to thank Heath and Sazzzel for there amazing hard work and dedication towards this project.
