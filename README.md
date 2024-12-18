@@ -2,7 +2,7 @@
 
 
 
-![Post It landing page](documentation/final_views/)
+![Post It landing page](documentation/images/responsive_screenshot.png)
 
 
 ## Introduction
