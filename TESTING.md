@@ -39,13 +39,13 @@ Due to using Jinja syntax such as '{% extends "base.html" %} we had to use a dif
 
 ![html validation](documentation/testing/validator_clear.png) 
 
-All HTML pages were validated and the pages generated solely by myself received a 'No errors or warning to show' result as shown above.
+All HTML pages were validated and pages received a 'No errors or warning to show' result as shown above.
 
 | HTML source Code/Page | Errors | Warnings |
 | ---- | ----- | ------|
 | Blogs | 0 | 0 |
 | Blog Post | 0 | 0 |
-| Register | 4 | 0 |
+| Register | 0 | 0 |
 | Log in | 0 | 0 |
 | Log out | 0 | 0 |
 | Devs | 0 | 0 |
@@ -58,7 +58,9 @@ All HTML pages were validated and the pages generated solely by myself received 
 
 | Page | Screenshot | Errors | Warnings |
 | ---- | ------ | ------ | ------ | 
-| post_detail.html | ![js from post_detail.html](documentation/testing/) | none | none |
+| base.html | ![js from base.html](documentation/testing/js_christmas.png) | none | none |
+| index.html | ![js from index.html](documentation/testing/js_post_colours.png) | none | none |
+| post_detail.html | ![js from post_detail.html](documentation/testing/js_comments.png) | none | none |
 
 <hr>
 
@@ -78,7 +80,7 @@ All HTML pages were validated and the pages generated solely by myself received 
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css) was not tested. 
 
-![css validation](documentation/testing/)
+![css validation](documentation/testing/css_validator.png)
   
 <hr> 
 
@@ -91,10 +93,13 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
 
 ![Lighthouse scores event post](documentation/testing/)
 *Desktop Blog Post Page*  
+
+![Lighthouse scores devs](documentation/testing/)
+*Desktop Blog Post Page*
   
 <hr>
 
-### Wave Accisibility Evaluation 
+### Wave Accessibility Evaluation 
 
 ![WAVE Web Accessibility Evaluation Tools](documentation/testing/)
 
@@ -109,12 +114,11 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Feature | Tested? | User Input required | User Feedback Provided | Pass/Fail | Fix |
 | ------- | ------- | ------------------- | ---------------------- | --------- | --- |
 | Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
-| Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/) too similar, password too short | Pass | - |
+| Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/register_prompt.png) too similar, password too short | Pass | - |
 | Login | Yes | Username and Password | Username and Password must be exactly as originally registered. User notified once successfully signed in. | Pass | - |
-| Blog Post Links | Yes | Click | User is taken to intended location via a new tab | Pass | - |
 | Comment Box (Registered User) | Yes | Text input accepted | User is thanked for their comment | Pass | - |
 | Edit Comment (Registered, Author) | Yes | Click button to choose Edit | Comment appears in comment box for update and update button appears underneath. When pressed the user is infomred that the comment has been updated | Pass | - |
-| Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/) pops up asking the user if they are sure they want to delete their comment | Pass | - |
+| Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/delete_comment.png) pops up asking the user if they are sure they want to delete their comment | Pass | - |
 
 
 ### Browser Compatibility 
@@ -133,16 +137,23 @@ User Stories are documented in the Post It [Github Projects Board](https://githu
 
 | User Story | Acceptance Criteria Met? | Tested | Response | Pass/Fail | Fix |
 | ---- | ---- | ----- | ---- | ----- | ---- |
+| Admin dashboard | Yes | Yes | No issues | Pass | - |
+| User Authentication | Yes | Yes | No issues | Pass | - |
+| Admin event creation | Yes | Yes | No issues | Pass | - |
+| User event feed | Events are listed by start date. There is no search functionality | Yes | No issues | Pass | - |
+| Event commenting | Yes | Yes | No issues | Pass | - |
 
 <hr>
 
 ### Dev Tools/Real World Device Testing
 
-Responsive testing was carrired out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally I would have to refresh the page as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. I put this down to a caching issue in Chrome as this issue was not observed when testing on the available real world devices.
+Responsive testing was carrired out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices. Occassionally the page would have to be refreshed as the page would load zoomed in or out on the simualted device. When refreshed and CSS checked the desired outcome was observed. It is suspected that this was down to a caching issue.
   
 **Dev Tools Device Testing**
 | Device | Feature | Issue | Fix |
 | ---- | ----- | ---- | ----- |
+| iPhone SE | All features | No issues | None needed |
+| iPad Air | All features | No issues | None needed |
 
 **Real World Device Testing**
 | Device      | Feature    | Issue  | Fix  | 

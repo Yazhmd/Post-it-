@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+/* global bootstrap */
 document.addEventListener('DOMContentLoaded', () => {
     const colors = ['bg-color-1', 'bg-color-2', 'bg-color-3']; // Available background classes
     const postElements = document.querySelectorAll('.postholder');
