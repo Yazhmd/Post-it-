@@ -274,6 +274,15 @@ footer{
     box-shadow: 5px 5px 10px black;
     justify-self: center;   
 }
+.btn-signup-done {
+    color: black;
+    background: #ffff99;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    justify-self: center;   
+}
 .next-step,
 .prev-step {
     color: black;

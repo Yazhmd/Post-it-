@@ -72,11 +72,11 @@ Post It is accessible via all browsers with full responsiveness on different scr
 
 The idea of the website is to have events posted on a post it note on a corkboard. The colour scheme reflected the traditional colours of a Post It note.
 
-![screenshot of colour scheme](documentation/final_views/)  
+![screenshot of colour scheme](documentation/images/colours.png)  
 
 ### Font
 
-In terms of Font style we opted for ???
+In terms of Font style we opted for [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
   
 # Project Planning  
  
@@ -226,76 +226,73 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 
 <details open>
   <summary>Header & Navigation - unregistered users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/nav.png">
 </details>  
 
 <details open>
   <summary>Header & Navigation - registered users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/navlogin.png">
 </details> 
 
 <details open>
   <summary>Footer - all users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/footer.png">
 </details>  
 
 **Paginated Posts**
 
 <details open>
   <summary>Paginated posts - all users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/page.png">
 </details> 
 
 **Event Post**
 
 <details open>
   <summary>Individual posts - all users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/post.png">
 </details>
 
 **Comments**
 
 <details open>
   <summary>Comments - unregistered user</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/comments.png">
 </details>
 
 <details open>
   <summary>Comments - registered user</summary>
-  <img src="documentation/final_views/">
-</details>
-
-<details open>
-  <summary>Comments - author</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/logincomments.png">
 </details>
 
 **Registration/Sign Up**
 
 <details open>
   <summary>Registration - all users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/signup1.png">
+  <img src="documentation/images/signup2.png">
+  <img src="documentation/images/signup3.png">
 </details>
 
 **Sign In**
 
 <details open>
   <summary>Sign in - all users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/signin.png">
 </details>
 
 **Sign Out**
 
 <details open>
   <summary>Sign out - registered users</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/logout.png">
 </details>
 
 **Admin Panel**
 
 <details open>
   <summary>Admin panel</summary>
-  <img src="documentation/final_views/">
+  <img src="documentation/images/admin.png">
 </details>
 
 ## Future Features
@@ -707,3 +704,10 @@ The following sites complemented my learning for this project alongside the [Cod
 
 ## Acknowledgements
 
+- We would all like to thank our learning facilitator Amy Richardson, SME Mark Briscoe, and Coding Coach John Reardon for the continued aid and support throughout this project.
+
+- A shout out to the rest 2024 Lancs Bootcamp cohort who have served to be a source of inspiration and help throughout our time on this course. To have been able to work through this bootcamp with them has been an absolute pleasure.
+
+- Heath would like to thank his amazing partner Jolene who is the inspiration for all that he does, and his little doggy Spencer who reminds him that life is not all about being stuck at a keyboard.
+
+- Sazzzel would like to thank her husband for being supportive throughout my course, for putting up with her.
