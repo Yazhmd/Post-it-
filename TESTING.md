@@ -80,7 +80,7 @@ All HTML pages were validated and pages received a 'No errors or warning to show
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css) was not tested. 
 
-![css validation](documentation/testing/)
+![css validation](documentation/testing/css_validator.png)
   
 <hr> 
 
@@ -93,10 +93,13 @@ Lighthouse testing was carried out in Incognito mode to acheive the best result.
 
 ![Lighthouse scores event post](documentation/testing/)
 *Desktop Blog Post Page*  
+
+![Lighthouse scores devs](documentation/testing/)
+*Desktop Blog Post Page*
   
 <hr>
 
-### Wave Accisibility Evaluation 
+### Wave Accessibility Evaluation 
 
 ![WAVE Web Accessibility Evaluation Tools](documentation/testing/)
 
@@ -134,6 +137,11 @@ User Stories are documented in the Post It [Github Projects Board](https://githu
 
 | User Story | Acceptance Criteria Met? | Tested | Response | Pass/Fail | Fix |
 | ---- | ---- | ----- | ---- | ----- | ---- |
+| Admin dashboard | Yes | Yes | No issues | Pass | - |
+| User Authentication | Yes | Yes | No issues | Pass | - |
+| Admin event creation | Yes | Yes | No issues | Pass | - |
+| User event feed | Events are listed by start date. There is no search functionality | Yes | No issues | Pass | - |
+| Event commenting | Yes | Yes | No issues | Pass | - |
 
 <hr>
 
