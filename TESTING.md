@@ -39,7 +39,7 @@ Due to using Jinja syntax such as '{% extends "base.html" %} we had to use a dif
 
 ![html validation](documentation/testing/validator_clear.png) 
 
-All HTML pages were validated and the pages generated solely by myself received a 'No errors or warning to show' result as shown above.
+All HTML pages were validated and pages received a 'No errors or warning to show' result as shown above.
 
 | HTML source Code/Page | Errors | Warnings |
 | ---- | ----- | ------|
@@ -58,7 +58,9 @@ All HTML pages were validated and the pages generated solely by myself received 
 
 | Page | Screenshot | Errors | Warnings |
 | ---- | ------ | ------ | ------ | 
-| post_detail.html | ![js from post_detail.html](documentation/testing/) | none | none |
+| base.html | ![js from base.html](documentation/testing/js_christmas.png) | none | none |
+| index.html | ![js from index.html](documentation/testing/js_post_colours.png) | none | none |
+| post_detail.html | ![js from post_detail.html](documentation/testing/js_comments.png) | none | none |
 
 <hr>
 
