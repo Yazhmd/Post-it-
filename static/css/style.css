@@ -39,15 +39,17 @@ body {
 }
 
 .link {
-    color: black !important; 
+    color: black !important;
     transition: color 0.3s ease;
     font-size: 20px;
 }
-.nav-link{
-    color: white !important; 
+
+.nav-link {
+    color: white !important;
     transition: color 0.3s ease;
     font-size: 20px;
 }
+
 .nav-link:hover {
     color: #3DA6FF !important;
 }
@@ -203,7 +205,19 @@ footer {
     position: fixed;
     bottom: -30px;
     width: 100%;
+
 }
+
+
+main {
+
+    margin-top: 20px;
+
+    padding-bottom: 150px;
+
+}
+
+
 
 .main-bg {
     top: 10%;
@@ -232,19 +246,13 @@ footer {
 }
 
 
-.card-body {
-
-    background-image: url(../images/post_it_note.webp);
-
-
-}
 
 .card-text {
     font-size: 16px;
 }
 
 .card-img-top {
-    border-radius: 40px;    
+    border-radius: 40px;
     box-shadow: 5px 5px 10px #000000;
 }
 
@@ -277,18 +285,20 @@ footer {
 .post-subtitle {
     margin-left: 5%;
     color: #c0c0c0;
-} 
+}
+
 .bg-color-1 {
-    background-color: #ffff99; 
+    background-color: #ffff99;
 }
 
 .bg-color-2 {
-    background-color: #ff65a3; 
+    background-color: #ff65a3;
 }
 
 .bg-color-3 {
-    background-color: #3DA6FF; 
+    background-color: #3DA6FF;
 }
+
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -302,8 +312,8 @@ footer {
 
 /* Buttons */
 .btn-close-conf,
-.btn-edit, 
-.btn-comment-edit, 
+.btn-edit,
+.btn-comment-edit,
 .btn-testimonial-edit {
     color: #fff;
     background: #e9761b;
@@ -312,6 +322,7 @@ footer {
     box-shadow: 5px 5px 10px black;
     justify-self: center;
 }
+
 .btn-signup {
     color: black;
     background: #ff65a3;
@@ -321,6 +332,7 @@ footer {
     box-shadow: 5px 5px 10px black;
     justify-self: center;
 }
+
 .next-step,
 .prev-step {
     color: black;
@@ -329,7 +341,7 @@ footer {
     margin-right: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
-    justify-self: center; 
+    justify-self: center;
 }
 
 .next-step:hover,
@@ -347,9 +359,12 @@ footer {
     color: #fff;
     background: #e9761b;
 }
+
 .pagination-container {
-    position: relative; /* Relative to contain the absolutely positioned buttons */
-    width: 100%; /* Ensure it spans the entire width of the viewport */
+    position: relative;
+    /* Relative to contain the absolutely positioned buttons */
+    width: 100%;
+    /* Ensure it spans the entire width of the viewport */
 }
 
 .btn-page-prev,
@@ -360,31 +375,34 @@ footer {
     font-weight: bold;
     border-radius: 4px;
     color: white;
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #007bff;
+    /* Bootstrap primary color */
     border: 1px solid #007bff;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-page-prev {
-    left: 25%; 
+    left: 25%;
     margin-top: 20px;
 }
 
 .btn-page-next {
-    right: 25%; 
+    right: 25%;
 }
 
 .btn-page-prev:hover,
 .btn-page-next:hover {
-    background-color: #0056b3; /* Darker blue for hover */
+    background-color: #0056b3;
+    /* Darker blue for hover */
     color: #fff;
 }
 
 .pagination {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    list-style: none; /
+    list-style: none;/
 }
+
 .scale {
     width: 100%;
     height: auto;
@@ -527,6 +545,7 @@ footer {
     align-items: center;
     /* Vertically center */
     justify-items: center;
+ 
 }
 
 .comment {
@@ -534,13 +553,13 @@ footer {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    background-color: #445261;
 
-    background-image: url(../images/post_it_note.webp);
-    
+    background-color: #ffff99;
+
+
     box-shadow: 5px 5px 10px black;
     margin: 50px;
-    color: #c0c0c0;
+    color: #000000;
     justify-self: center;
     flex-direction: column;
     align-items: center;
@@ -603,6 +622,7 @@ footer {
 .alert-dismissible {
     color: #c0c0c0;
 }
+
 .bio-card-1 {
     display: flex;
     position: relative;
@@ -615,9 +635,10 @@ footer {
     justify-self: center;
     min-width: 30%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
 
 .bio-card-2 {
@@ -632,9 +653,10 @@ footer {
     justify-self: center;
     min-width: 30%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
 
 .bio-card-3 {
@@ -649,27 +671,33 @@ footer {
     justify-self: center;
     min-width: 30%;
     z-index: 10;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    justify-items: center; 
+    flex-direction: column;
+    align-items: center;
+    /* Vertically center */
+    justify-items: center;
 }
+
 /* Optional: Add a default style to fallback */
 .bio-card {
     transition: background-color 0.3s ease;
 }
+
 .bio-links {
     color: #000000;
     font-size: 40px;
     margin-bottom: 6px;
 }
+
 .bio-links:hover {
     transform: scale(1.2);
 }
+
 .bio-space {
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
 }
+
 /* Media Query for Tablet Screens */
 @media screen and (max-width: 991px) {
     .face-container {
