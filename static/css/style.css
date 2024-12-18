@@ -60,6 +60,17 @@ body {
     font-weight: bold;
 }
 
+.search {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.contrast {
+    font-size: x-large;
+    color: #000000;
+    font-weight: 700;
+}
+
 /* Face (Elf) Container */
 .face-container {
     position: fixed;
@@ -719,4 +730,5 @@ main {
         /* Hide the elf container on tablet screens and smaller */
     }
 
-}
+    }   
+
