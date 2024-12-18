@@ -263,10 +263,9 @@ footer{
 /* Buttons */
 .btn-close-conf,
 .btn-edit, 
-.btn-comment-edit, 
-.btn-testimonial-edit {
-    color: #fff;
-    background: #e9761b;
+.btn-comment-edit {
+    color: black;
+    background: #ffff99;
     margin-left: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
@@ -302,10 +301,10 @@ footer{
 
 .btn-delete-conf,
 .btn-delete, 
-.btn-comment-delete, 
-.btn-testimonial-delete {
-    color: #fff;
-    background: #e9761b;
+.btn-comment-delete
+ {
+    color: black;
+    background: #ff65a3;
 }
 .pagination-container {
     position: relative; /* Relative to contain the absolutely positioned buttons */
