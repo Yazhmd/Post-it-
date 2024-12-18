@@ -111,12 +111,11 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Feature | Tested? | User Input required | User Feedback Provided | Pass/Fail | Fix |
 | ------- | ------- | ------------------- | ---------------------- | --------- | --- |
 | Navbar | Yes | Click | The user is directed to the specific page as intended | Pass | - |
-| Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/) too similar, password too short | Pass | - |
+| Register Page | Yes | Username/Password. Email is optional | Empty username and password fields prompt the user. [username/password](documentation/testing/register_prompt.png) too similar, password too short | Pass | - |
 | Login | Yes | Username and Password | Username and Password must be exactly as originally registered. User notified once successfully signed in. | Pass | - |
-| Blog Post Links | Yes | Click | User is taken to intended location via a new tab | Pass | - |
 | Comment Box (Registered User) | Yes | Text input accepted | User is thanked for their comment | Pass | - |
 | Edit Comment (Registered, Author) | Yes | Click button to choose Edit | Comment appears in comment box for update and update button appears underneath. When pressed the user is infomred that the comment has been updated | Pass | - |
-| Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/) pops up asking the user if they are sure they want to delete their comment | Pass | - |
+| Delete Comment (Registered, Author) | Yes | Click button to choose Delete comment | A [modal](documentation/testing/delete_comment.png) pops up asking the user if they are sure they want to delete their comment | Pass | - |
 
 
 ### Browser Compatibility 
