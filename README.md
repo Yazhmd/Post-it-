@@ -337,6 +337,7 @@ Further information is available in the [requirements.txt file](requirements.txt
 
 - [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
 - [Lucid](https://lucidchart.com) for creating the ERD.
+- [TinyPNG](https://tinypng.com/) for reducing image sizes.
 
 # Testing
 
