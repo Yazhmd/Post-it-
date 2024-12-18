@@ -222,6 +222,11 @@ Users are able to Create, Read, Update and Delete their shared information on Po
 
 *For features showcase screenshots were taken on laptop*
 
+  <summary>Bernard the Elf</summary>
+  <img src="documentation/images/Bernard.png">
+ 
+<br>
+
 **Header/Navigation & Footer**
 
 <details open>
